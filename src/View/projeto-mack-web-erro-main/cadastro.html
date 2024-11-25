@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Cadastro</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/logosemfundo.png">
+  <script src="js/cadastro.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="css/cadastro.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header>
+    <a href="login.html" id="voltar">Voltar</a>
+  </header>
+
+  <section class="signup-container">
+    <div class="topo container">
+      <h2>Cadastro</h2>
+      <a href="quemsomos.html"><img id="logo" src="/images/logofolha.png" alt=""></a>
+    </div>
+
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="tipo">Tipo de Instituição</label>
+        <input type="radio"> Empresa
+        <input type="radio"> Ong
+      </div>
+      <div class="form-group">
+        <label for="username">Nome da Empresa/ONG:</label>
+        <input type="text" id="username" name="username" placeholder="Digite o nome da Empresa/Ong"
+          title="Exemplo: Caixias Do Sul Corp." style="width: 100%;" required>
+      </div>
+
+      <div class="form-group d-block align-items-center text-center">
+        <label for="cnpj">Digite o CNPJ:</label>
+        <input type="text" id="CNPJ" name="CNPJ" placeholder="Digite o CNPJ" title="Exemplo: 535.636.636/01" required>
+        <label for="cnpj">Confirme o CNPJ:</label>
+        <input type="text" id="CCNPJ" name="CNPJ" placeholder="Confirme o CNPJ" title="Exemplo: 535.636.636/01"
+          required>
+
+      </div>
+
+      <div class="form-group d-block align-items-center text-center ">
+        <label for="Email">Email:</label>
+        <input type="Email" id="Email" name="Emaiç" placeholder="Digite o Email da Empresa/Ong"
+          title="Exemplo: CaixiasDoSul@Hotmail.com" style="width: 100%;" required>
+        <label for="Email">Confirme o Email:</label>
+        <input type="Email" id="Email" name="Emaiç" placeholder="Confirme o Email da Empresa/Ong"
+          title="Exemplo: CaixiasDoSul@Hotmail.com" style="width: 100%;" required>
+      </div>
+
+      <div class="form-group d-flex align-items-center text-center ">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Digite a Senha" title="Exemplo: Caixias1234"
+          required>
+        <label for="password">Confirme a Senha:</label>
+        <input type="password" id="cpassword" name="password" placeholder="Confirme a Senha"
+          title="Exemplo: Caixias1234" required>
+      </div>
+      <div class="form-group d-block align-items-center text-center ">
+        <label for="Telefone">Telefone</label>
+        <input type="text" id="Telefone" name="Telefone" placeholder="Digite seu Telefone"
+          title="Exemplo: (11) 53632-6315" required>
+        <label for="Telefone">Confirme seu telefone:</label>
+        <input type="text" id="cTelefone" name="Telefone" placeholder="Confirme seu Telefone"
+          title="Exemplo: (11) 53632-6315" required>
+      </div>
+      <div class="form-group d-block align-items-center text-center">
+        <select class="Estado rounded   " style="width: 100%; height: 40px;" value="Selecione o estado" id="Estado"
+          required><br>
+          <option value="" disabled_select>Selecione o Estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraiba</option>
+          <option value="PR">Parana</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondânia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </div>
+
+      <a href="index.html"><input type="button" class="container" id="botao" type="submit" value="Cadastrar"></a>
+    </form>
+    <p id="error-message" class="error-message"></p>
+
+  </section>
+
+</body>
+
+</html>

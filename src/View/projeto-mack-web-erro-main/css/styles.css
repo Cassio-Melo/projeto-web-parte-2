@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./services.css);
+@import url(./galery.css);
+@import url(./testimonials.css);
+@import url(./contact.css);
+@import url(./footer.css);
+@import url(./nav.css);
+@import url(./hardware.css);
+@import url(./compra.css);
+:root {
+    --primary-font: 'Poppins';
+    --secundary-color: white;
+    --primary-color: black;
+    --blue: #2f00ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#aq{
+    font-size: 25px;
+}
+
+.formmodal h3{
+    text-align: center;
+    margin: 10px;
+}
+.es{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 15px;
+    
+}
+
+.mybtn{
+    background-color: chartreuse;
+}
