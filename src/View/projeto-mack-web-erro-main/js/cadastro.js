@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 document.getElementById('signup-form').addEventListener('submit', function(event) {
     event.preventDefault();
 

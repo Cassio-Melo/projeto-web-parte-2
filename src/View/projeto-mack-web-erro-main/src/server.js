@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 
 import express from 'express';
-import getRoutes from './rotas/getRoutes.js';
-import putRoutes from './rotas/putRoutes.js';
-import postRoutes from './rotas/postRoutes.js';
-import deleteRoutes from './rotas/deleteRoutes.js';
+import getRoutes from '../rotas/getRoutes.js';
+import putRoutes from '../rotas/putRoutes.js';
+import postRoutes from '../rotas/postRoutes.js';
+import deleteRoutes from '../rotas/deleteRoutes.js';
 
 const server= express();
 

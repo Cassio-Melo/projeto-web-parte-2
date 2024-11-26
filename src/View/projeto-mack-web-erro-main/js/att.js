@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll('.mybotoes');
     buttons.forEach(button => {

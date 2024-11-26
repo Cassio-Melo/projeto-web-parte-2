@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 document.addEventListener("DOMContentLoaded", function() {
     const carouselContainer = document.querySelector(".gallery--container");
     const galleryList = carouselContainer.querySelector(".galleryList");
