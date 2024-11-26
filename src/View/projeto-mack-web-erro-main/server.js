@@ -11,6 +11,9 @@ const server= express();
 // Middleware para parsear JSON, para processar o corpo da requisicao em formato JSON
 server.use(express.json());
 
+// Middleware para servir arquivos estáticos da pasta "public"
+server.use(express.static('public'));
+
 server.use(getRoutes);
 server.use(putRoutes);
 server.use(postRoutes);

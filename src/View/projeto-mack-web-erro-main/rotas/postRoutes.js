@@ -7,3 +7,5 @@ router.post('/compra', (req, res) => {
     console.log(`Item ${itemId} com quantidade ${quantidade} adicionado ao carrinho.`);
     res.status(201).send(`Item ${itemId} adicionado ao carrinho com sucesso.`);
 });
+
+export default router;
