@@ -2,7 +2,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Projeto2 } from './entities/projeto2.entity'; // Verifique se a classe Projeto2 está exportada corretamente
+import { Projeto2 } from './entities/projeto2.entity'; 
 import { CreateProjeto2Dto } from './dto/create-projeto2.dto';
 import { UpdateProjeto2Dto } from './dto/update-projeto2.dto';
 

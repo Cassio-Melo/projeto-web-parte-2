@@ -1,15 +1,19 @@
 /* eslint-disable prettier/prettier */
 import * as mongoose from 'mongoose';
-
-// define o esquema para o modelo projeto2
 export const Projeto2Schema = new mongoose.Schema({
-    //campos do tipo string
-    nome: { type: String, required: true },
-    email: { type: String, required: true }
-}, { collection: 'projeto2' }); // define a coleção como projeto2
+  nome: { type: String, required: true },
+  email: { type: String, required: true },
+  senha: { type: String, required: true },
+  endereco: { type: String, required: true},
+  telefone: {type: String, required: true}
+});
 
 export interface Projeto2 extends mongoose.Document {
-    readonly id: string; // Alias para _id, se necessário
-    nome: string;
-    email: string;
+  id: string;
+  nome: string;
+  email: string;
+  senha: string;
+  endereco: string;
+  telefone: string;
 }
+
